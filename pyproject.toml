@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "valhalla"
+version = "0.1.0"
+description = "Pulumi for a Valheim Server hosted on AWS"
+authors = ["Mason Legere <masonlegere@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pulumi = "^3.111.1"
+pulumi-aws = "^6.27.0"
+dynaconf = "^3.2.5"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff.lint]
+extend-select = ["I"]

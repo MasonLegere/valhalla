@@ -1,0 +1,15 @@
+default:
+  namespace:
+    name: valhalla
+    tags: {}
+
+  cluster:
+    name: valhalla
+    image: ghcr.io/lloesche/valheim-server
+    cluster_name: valhalla
+    image: ghcr.io/lloesche/valheim-server
+    desired_count: 0
+    min_unhealthy_percent: 0
+    max_unhealthy_percent: 200
+    cpu: 2048
+    memory: 4096

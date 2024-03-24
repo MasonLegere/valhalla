@@ -1,0 +1,4 @@
+*.pyc
+venv/
+volume/
+.mypy_cache/

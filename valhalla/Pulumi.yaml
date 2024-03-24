@@ -1,0 +1,5 @@
+name: valheim
+runtime:
+  name: python
+description: A simple Valheim server on AWS ECS - EC2
+
