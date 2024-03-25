@@ -1,15 +1,13 @@
 default:
-  namespace:
-    name: valhalla
-    tags: {}
 
-  cluster:
+  vpc:
     name: valhalla
-    image: ghcr.io/lloesche/valheim-server
-    cluster_name: valhalla
-    image: ghcr.io/lloesche/valheim-server
-    desired_count: 0
-    min_unhealthy_percent: 0
-    max_unhealthy_percent: 200
-    cpu: 2048
-    memory: 4096
+    cidr_block: 10.0.0.0/16
+  
+  igw:
+    name: valhalla-igw
+
+  efs:
+    name: valhalla-efs
+    performance_mode: generalPurpose
+    encrypted: true
